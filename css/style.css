@@ -1,0 +1,82 @@
+body {
+    font-size: 16px;
+    font-family: 'OpenSans';
+}
+
+header {
+    margin-bottom: 100px;
+}
+
+header > * {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temperatures {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.temperatures .temperature {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.temperatures .temperature .head {
+    font-weight: bold;
+}
+
+.temperatures .temperature .temperature-value {
+    font-size: 24px;
+    padding: 8px;
+}
+
+.temperatures .temperature .temperature-value.up {
+    color: green;
+}
+
+.temperatures .temperature .temperature-value.down {
+    color: red;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.actions .btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.actions .btn-start{
+    background-color: green;
+}
+
+.actions .btn-stop{
+    background-color: red;
+}
+
+.actions .btn.disabled {
+    pointer-events: none;
+    background-color: rgba(0,0,0,0.8);
+    color: #fcfcfc;
+}

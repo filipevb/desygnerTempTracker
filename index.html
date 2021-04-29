@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temp Tracker</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src="js/TempTracker.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Here is our main header that is used across all the pages of our website -->
+
+    <header>
+      <h1>Temp Tracker</h1>
+      <div class="last-temperature">
+          <span>Last temperature: </span> <span id="last-temperature">-</span>
+      </div>
+    </header>
+
+    <main>
+
+        <div class="temperatures">
+            <div id="min-temp" class="temperature">
+                <div class="head">Min Temperature</div>
+                <div class="temperature-value">-</div>
+            </div>
+            <div id="avg-temp" class="temperature">
+                <div class="head">Average Temperature</div>
+                <div class="temperature-value">-</div>
+            </div>
+            <div id="max-temp" class="temperature">
+                <div class="head">Max Temperature</div>
+                <div class="temperature-value">-</div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-start" id="btn-start">Start feeding</button>
+            <button class="btn btn-stop disabled" id="btn-stop">Stop feeding</button>
+        </div>
+
+    </main>
+
+    <footer>
+    </footer>
+
+  </body>
+</html>
